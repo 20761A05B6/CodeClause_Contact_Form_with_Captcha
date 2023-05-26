@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_contact.css"/>
+  </head>
+  <body onload="fun()">
+    <div class="contact-form">
+        <h2>Contact Form with Captcha</h2><br>
+        <label>UserName</label><input type="text" id="u"><br>
+        <label>Email</label><input type="email" id="e"><br>
+        <label>Phone No.</label><input type="text" id="p"><br>
+        <textarea id="m" rows="5" cols="45" placeholder="Message"></textarea>
+        <div><p id="captcha" class="captcha"></p></div><div class="inline" onclick="fun()">
+          <i class="fa fa-refresh"></i>
+      </div>
+        <input type="text" id="cap" placeholder="Type above captcha here..">
+        <center><button class="sub" onclick="msg()" id="s" >Submit</button></center>
+        <p id="res"></p>
+    </div>
+    <script src="script_contact.js"></script>
+  </body>
+</html>
